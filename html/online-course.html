@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online  Course </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<style type="text/css">
+body {
+  padding-top: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  color: gray;
+}
+
+body {
+  padding-top: 70px !important;
+}
+
+a:hover, a:active, a:focus{
+  text-decoration: none;
+}
+
+h1, h2,h3,h4,h5,h6 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+.clearHeader .navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 6px 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-default {
+  background: #fff;
+  border-radius: 0px;
+  border-bottom: 0px;
+}
+
+.btn-instructor{
+  color: #fff;
+  background-color: #3b3e79;
+  border-color: #3b3e79;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+
+.btn-institution{
+  color: #fff;
+  background-color: #34c88a;
+  border-color: #34c88a;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.cu-navbar-right > li > a {
+  color: #fff;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 22px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.v-hr-line { 
+  width: 2px;
+  height: 34px;
+  background: #f8f8f8;
+  display: -webkit-box;
+}
+.medium-font {
+  color: #3b3e79;
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.medium-font-title {
+  color: #3b3e79;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.xm-medium-font{
+  font-size: 15px;
+  line-height: 30px;
+
+}
+
+.xsm-font-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.intro-descripton {
+  padding-top: 80px;
+}
+
+.intro-section {
+  background-image: url(../image/introduction-banner.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right bottom -7px;
+  background-size: 75%;
+  height: 89vh;
+  min-height: 600px;
+}
+
+.client-type-btn {
+  margin-top:  40px;
+}
+
+.client-type-btn a {
+  margin-right: 20px;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+#myCarousel .col-md-4 {
+  padding-left: 7px;
+}
+  
+.thin__product {
+  position: relative;
+  padding-top: 70px;
+  text-decoration: none;
+}
+
+.thin__product:hover .thin__product-dot {
+    transform: scale(1)
+}
+
+.thin__product-dot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00d664;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .12);
+  transform: scale(0);
+  transition: transform .3s cubic-bezier(.175, .885, .32, 1)
+}
+
+.thin__product-dot:before {
+  content: url("https://cdn2.hubspot.net/hubfs/493098/images/landing_pages/universal/arrow-right-big.svg")
+}
+
+.thin__product-icon-wrap {
+  width: 154px;
+  height: 154px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 31px
+}
+
+.thin__product-icon-wrap:before {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  border: 1px dotted rgba(0, 0, 0, .2);
+  transform: translate(-50%, -50%);
+  transition: width .3s cubic-bezier(.175, .885, .32, 1.275), height .3s cubic-bezier(.175, .885, .32, 1.275)
+}
+
+.thin__product-icon-wrap:hover:before {
+  width: 308px;
+  height: 308px
+}
+
+.thin__product-icon-wrap:hover .thin__service-dot {
+  transform: scale(1);
+  transition: transform .3s cubic-bezier(.175, .885, .32, 1.275)
+}
+
+.thin__product-icon-wrap--no-border {
+  border: 0
+}
+
+.thin__product-icon {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%)
+}
+
+.thin__product-icon--product-review {
+  transform: translate(-61%, -51%)
+}
+
+.thin__product-number {
+  top: -70px;
+  left: 50%;
+  position: absolute;
+  margin-left: 50px;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(0, 0, 0, .03)
+}
+
+.thin__product-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+
+.thin__product-subtitle {
+  max-width: 230px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 22px;
+  color: gray;
+  text-align: center;
+}
+
+.thin-profession-select {
+  font-weight: 700
+}
+
+.thin-profession-select__item {
+  display: block;
+  padding: 35px;
+  text-decoration: none;
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .5s ease
+}
+
+.bottom-50{
+  margin-bottom: 50px;
+}
+
+.bottom-100 {
+  margin-bottom: 100px;
+}
+
+.bottom-20 {
+  margin-bottom: 20px;
+}
+
+.padding-right-0{
+  padding-right: 0px;
+}
+
+.padding-left-0 {
+  padding-left: 0px;
+}
+
+.available-course-4{
+  padding-left: 60px;
+}
+
+#how-it-works {
+  background: #fbfcfc;
+}
+
+.available-course-4 .carousel-control {
+  left: 81px;
+}
+
+.available-course-title {
+  margin-bottom: 60px;
+}
+
+.yellow-bg {
+    background: #fdd333;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.free-course-icon {
+  float: left;
+  margin-right: 25px;
+}
+
+.free-course-text h3 {
+  color: #3b3e79;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-top: 15px;
+}
+
+.free-course-button {
+  margin-top: 7px;
+}
+
+.free-course-icon a {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #3b3e79;
+  display: inline-block;
+  font-size: 24px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  width: 62px;
+}
+
+.free-course-button a {
+  border: 2px solid #fff;
+  color: #3b3e79;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.free-course-button a:hover {
+  background: #3b3e79;
+  border-color: #3b3e79;
+  color: #fff;
+}
+
+.text-md-right {
+  text-align: right!important;
+}
+
+  /* override position and transform in 3.3.x */
+.carousel-inner .item.left.active {
+  transform: translateX(-33%);
+}
+.carousel-inner .item.right.active {
+  transform: translateX(33%);
+}
+
+.carousel-inner .item.next {
+  transform: translateX(33%)
+}
+.carousel-inner .item.prev {
+  transform: translateX(-33%)
+}
+
+.carousel-inner .item.right,
+.carousel-inner .item.left { 
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px){
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: 7px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+      margin-left: 60px;
+  }
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+  top: 100%;
+}
+
+.carousel-control.left,.carousel-control.right {background-image:none;}
+
+.cm-cards-slider__attribute-card {
+  width: 277px;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 18px 32px 0 rgba(0, 0, 0, .05)
+}
+
+.cm-cards-slider__attribute-card:focus,
+.cm-cards-slider__attribute-card:hover {
+  text-decoration: none
+}
+
+.cm-cards-slider__attribute-card:focus .cm-cards-slider__attribute-card-img,
+.cm-cards-slider__attribute-card:focus .cm-cards-slider__attribute-card-top:after,
+.cm-cards-slider__attribute-card:hover .cm-cards-slider__attribute-card-img,
+.cm-cards-slider__attribute-card:hover .cm-cards-slider__attribute-card-top:after {
+  visibility: visible
+}
+
+.cm-cards-slider__attribute-card:focus .cm-cards-slider__attribute-card-title,
+.cm-cards-slider__attribute-card:hover .cm-cards-slider__attribute-card-title {
+  overflow: hidden;
+  font-weight: 800;
+  text-decoration: none;
+  background-color: #00d664;
+  color: #fff
+}
+
+.cm-cards-slider__attribute-card:focus .cm-cards-slider__attribute-card-title:after,
+.cm-cards-slider__attribute-card:hover .cm-cards-slider__attribute-card-title:after {
+    content: url("https://cdn2.hubspot.net/hubfs/493098/images/landing_pages/universal/arrow-left-mini.svg")
+}
+
+.cm-cards-slider__attribute-card-img {
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.cm-cards-slider__attribute-card-top {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 262px
+}
+
+.cm-cards-slider__attribute-card-top:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  content: "";
+  height: 100%;
+  background-image: linear-gradient(-180deg, transparent, #000);
+  z-index: 2000
+}
+
+.cm-cards-slider__attribute-card-title {
+  height: 103px;
+  padding: 32px 30px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cm-cards-slider__attribute-card-title:after {
+  content: url("https://cdn2.hubspot.net/hubfs/493098/images/landing_pages/universal/arrow-right-mini.svg");
+  display: block;
+  margin-top: 5px
+}
+
+.darkHeader {
+  /*box-shadow: 0 0.25rem 3rem 0 rgba(0,0,0,0.1);*/
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.blue-bg {
+  background: #3b3e79;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+
+
+.counter-wrapper {
+  border: 1px solid #575cb3;
+  padding: 41px 30px 18px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.text-center {
+  text-align: center!important;
+}
+
+.counter-icon i {
+  color: #fdd333;
+  font-size: 56px;
+}
+
+.fa, .fas {
+  font-weight: 900;
+}
+
+.counter-text h1 {
+  border-bottom: 1px solid #575cb3;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 25px;
+  padding-bottom: 38px;
+}
+
+.counter-text span {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.event-wrapper {
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+}
+
+.event-img {
+  float: left;
+}
+
+.event-text {
+  overflow: hidden;
+  padding: 36px 17px 14px;
+}
+
+.event-img img {
+  width: 100%;
+}
+
+
+.event-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.event-tag a {
+  background: #fdd333 none repeat scroll 0 0;
+  border-radius: 30px;
+  color: #3b3e79;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 10px 23px;
+  text-transform: uppercase;
+}
+
+.event-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 16px;
+}
+
+.event-meta span {
+  color: #999999;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.event-meta span i {
+  color: #999999;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.event-text a {
+  color: #3b3e79;
+}
+
+
+.blue2-bg {
+  background: #464a8f;
+}
+
+.ptb-20 {
+  padding: 30px 0;
+  height: 70px;
+}
+
+.copyright p {
+  color: #a0aec6;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.footer-link li {
+  display: inline-block;
+  margin-right: 35px;
+  position: relative;
+}
+
+.footer-link li a {
+  color: #a0aec6;
+  font-size: 14px;
+  font-weight: 400;
+  transition: .3s;
+}
+
+
+</style>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top clearHeader">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../image/logo-1.png"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right cu-navbar-right">
+          <li><a href="#"><span class="btn-instructor">Instructor</span></a></li>
+          <li><a href="#"><span class="v-hr-line"></span></a></li>
+          <li><a href="#"><span class="btn-institution">Institution</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="intro-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="intro-descripton">
+            <h2 class="medium-font" >Learn a new skill online, on your time </h2>
+            <p class="xm-medium-font"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <p class="client-type-btn">
+              <a href="#"><span class="btn-instructor">Instructor</span></a> 
+              <a href="#"><span class="btn-institution">Institution</span></a></p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="intro-banner">
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="how-it-works">
+    <div class="how-it-works">
+      <div class="container-fluid">
+        <div class="bottom-100">
+          <h2 class="medium-font-title text-center"> Start Learning in 3 Easy Steps</h2>
+          <p class="xm-medium-font text-center">Our Online Course Categories</p>
+        </div>
+        <div class="row top-50">
+          <div class="col-xs-12 col-sm-4">
+            <a href="#" class="thin__product">
+              <div class="thin__product-number">1</div>
+              <div class="thin__product-icon-wrap">
+                <div class="thin__product-dot"></div>
+                <img class="thin__product-icon" src="../image/sign-up.png">
+              </div>
+              <h4 class="thin__product-title ">Sign up For Free</h4>
+              <p class="thin__product-subtitle">Report analysis of the product's market fit, usability, and user experience</p>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <a href="#" class="thin__product">
+              <div class="thin__product-number">2</div>
+              <div class="thin__product-icon-wrap">
+                <div class="thin__product-dot"></div>
+                <img  class="thin__product-icon" src="../image/course-online.png">
+              </div>
+              <h4 class="thin__product-title ">Buy a course online</h4>
+              <p class="thin__product-subtitle">Report analysis of the product's market fit, usability, and user experience</p>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <a href="#" class="thin__product">
+              <div class="thin__product-number">3</div>
+              <div class="thin__product-icon-wrap">
+                <div class="thin__product-dot"></div>
+                <img class="thin__product-icon" src="../image/download-option.png">
+              </div>
+              <h4 class="thin__product-title ">Download & Start Learning</h4>
+              <p class="thin__product-subtitle">Report analysis of the product's market fit, usability, and user experience</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="available-courses">
+    <div class="container-fluid">
+      <div class="bottom-50">
+        <h2 class="medium-font-title text-center"> Our Best Popular Courses for you</h2>
+        <p class="xm-medium-font text-center">Courses from the word's leading experts</p>
+      </div>
+      <div class="row top-50">
+        <div class="col-md-4">
+          <div class="available-course-4">
+            <div class="available-course-title">
+              <h2 class="xsm-font-title bottom-20">Available courses</h2>
+              <p class="xm-medium-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="carousel-arrow">
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev"><img src="https://img.icons8.com/material/50/000000/long-arrow-left.png" class="glyphicon-chevron-left"></a>
+
+              <a class="carousel-control" href="#myCarousel" data-slide="next">
+                <img src="https://img.icons8.com/material/50/000000/long-arrow-right.png" class=" glyphicon-chevron-right">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 padding-right-0">
+          <div class="carousel slide" id="myCarousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="col-md-4">
+                   <div class="cm-cards-slider__attribute-card">
+                    <div class="cm-cards-slider__attribute-card-top">
+                      <div class="cm-cards-slider__attribute-card-img" style="background-image: url(&quot;https://www.netguru.co/hubfs/feedback-318674-edited.jpg&quot;);"></div></div><div class="cm-cards-slider__attribute-card-title">Technology</div></div>
+                </div>
+              </div>
+              <div class="item">
+                 <div class="col-md-4">
+                   <div class="cm-cards-slider__attribute-card"><div class="cm-cards-slider__attribute-card-top"><div class="cm-cards-slider__attribute-card-img" style="background-image: url(../image/sceience.jpg);"></div></div><div class="cm-cards-slider__attribute-card-title">Science</div></div>
+                </div>
+              </div>
+              <div class="item">
+                 <div class="col-md-4">
+                   <div class="cm-cards-slider__attribute-card"><div class="cm-cards-slider__attribute-card-top"><div class="cm-cards-slider__attribute-card-img" style="background-image: url(../image/humanities.jpg);"></div></div><div class="cm-cards-slider__attribute-card-title">Humanities</div></div>
+                </div>
+              </div>
+              <div class="item">
+                 <div class="col-md-4">
+                   <div class="cm-cards-slider__attribute-card"><div class="cm-cards-slider__attribute-card-top"><div class="cm-cards-slider__attribute-card-img" style="background-image: url(../image/marketing.jpg);"></div></div><div class="cm-cards-slider__attribute-card-title">Marketing</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <div class="counter-area pt-100 pb-70 blue-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="counter-text">
+              <h1 class="counter">261</h1>
+              <span>Graduates</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="counter-text">
+              <h1 class="counter">361</h1>
+              <span>Students</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="counter-text">
+              <h1 class="counter">35</h1>
+              <span>Courses</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="counter-text">
+              <h1 class="counter">16</h1>
+              <span>Teachers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="free-course-area yellow-bg pt-50 pb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-8">
+          <div class="free-course-wrapper mb-20">
+            <div class="free-course-icon">
+              <a href="#"><i class="far fa-thumbs-up"></i></a>
+            </div>
+            <div class="free-course-text">
+              <h3>Try Our Free Trial Courses</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-4">
+          <div class="free-course-button text-md-right mt-10 mb-20">
+            <a href="#">JOIN NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="event-area pt-90 pb-70">
+    <div class="container">
+      <div class="section-title text-center mb-45">
+         <div class="bottom-50">
+          <h2 class="medium-font-title text-center">Latest News</h2>
+          <p class="xm-medium-font text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <div class="event-wrapper mb-30">
+            <div class="event-img">
+              <a href="events-details.html"><img src="../image/event1.jpg" alt=""></a>
+            </div>
+            <div class="event-text">
+              <span class="event-tag"><a href="events-details.html">8 may</a></span>
+              <h4><a href="#">Intern Bootcamp Meetup 2018</a></h4>
+              <div class="event-meta">
+                <span><i class="far fa-clock"></i>12 : 00AM - 5:00 PM</span>
+                <span><i class="fas fa-map-marker-alt"></i>Mirpur, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="event-wrapper mb-30">
+            <div class="event-img">
+              <a href="#"><img src="../image/event2.jpg" alt=""></a>
+            </div>
+            <div class="event-text">
+              <span class="event-tag"><a href="events-details.html">23 may</a></span>
+              <h4><a href="events-details.html">Tech Magazine About Trends</a></h4>
+              <div class="event-meta">
+                <span><i class="far fa-clock"></i>12 : 00AM - 5:00 PM</span>
+                <span><i class="fas fa-map-marker-alt"></i>gazipur, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-area blue2-bg ptb-20">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12">
+          <div class="copyright">
+            <p>Copyright <i class="far fa-copyright"></i> 2019 ThinkableLMS.</p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
+          <div class="footer-bottom-wrapper">
+            <ul class="footer-link  text-md-right">
+              <li><a href="#">About</a></li>
+              <li><a href="#"> Terms &amp; Conditions </a></li>
+              <li><a href="#">Privacy Policy </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $('#myCarousel').carousel({
+  interval: 10000,
+  interval: false
+
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 500) {
+      $(".clearHeader").addClass("darkHeader");
+  } else {
+      $(".clearHeader").removeClass("darkHeader");
+  }
+});
+</script>

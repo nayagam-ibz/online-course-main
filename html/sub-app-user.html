@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+  <body>
+  	<header class="dashboard">
+	  	<nav class="navbar navbar-default navbar-fixed-top clearHeader">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#"><img src="../image/logo-1.png"></a>
+	      </div>
+	      <div id="navbar" class="navbar-collapse collapse">
+	        <ul class="nav navbar-nav navbar-center">
+            <li class="das-menus">
+              <a class="nav-link" href="/">
+                <span aria-hidden="true"><img src="https://img.icons8.com/material-outlined/25/000000/home-page.png"></span>
+                <span>Dashboard</span></a>
+            </li>
+            <li class="das-menus">
+              <a class="nav-link" href="#">
+                <span aria-hidden="true"> 
+                	<img src="https://img.icons8.com/ios-glyphs/25/000000/client-management.png">
+                </span>
+                <span class="tex-menu">Clients</span>
+              </a>
+            </li>
+
+            <li class="das-menus">
+            	<a class="nav-link" href="#">
+            		<span aria-hidden="true">
+            			<img src="https://img.icons8.com/ios/25/000000/card-in-use-filled.png">
+            		</span>
+            	   <span class="tex-menu">Payments</span></a>
+            </li>
+      
+            <li class="das-menus">
+            	<a class="nav-link" href="/users" role="button" aria-expanded="false">
+            		<span aria-hidden="true">
+            			<img src="https://img.icons8.com/ios-glyphs/25/000000/stack.png">
+            		</span>
+            		<span class="tex-menu">Storage</span></a>
+            </li>
+
+            <li class="das-menus active">
+            	<a class="nav-link" href="/users" role="button" aria-expanded="false">
+            		<span aria-hidden="true">
+            			<img src="https://img.icons8.com/ios-glyphs/25/000000/group-foreground-selected.png">
+            		</span>
+            		<span class="tex-menu">Users</span>
+            	</a>
+            </li>
+
+            <li class="das-menus ">
+            	<a class="nav-link" href="/users" role="button" aria-expanded="false">
+            		<span aria-hidden="true">
+            			<img src="https://img.icons8.com/ios/25/000000/subscription-filled.png">
+            		</span>
+            		<span class="tex-menu">Subscriptions</span>
+            	</a>
+            </li>
+          </ul>
+	        <ul class="nav navbar-nav navbar-right cu-navbar-right">
+	          <li><a href="#"><span class="btn-instructor">Logout</span></a></li>
+	        </ul>
+	      </div>
+		  </nav>
+  	</header>
+  	<div class="clients-details" style="margin-top: 75px;">
+  		<div class="container-fluid">
+        <div class="tabs sexytabs">
+          <ul class="nav nav-tabs  nav-pills">
+            <li class="active"><a data-toggle="pill" href="#active">Active</a></li>
+            <li><a data-toggle="pill" href="#deactive">Deactive</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="active" class="tab-pane fade in active">
+              <div class="table-wrapper">
+                <div class="table-title">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h2>User Active</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="course_search_box">
+                        <input type="text" id="user_name_email" value="" class="form-control course_search_input" placeholder="Search with Email or Name ">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-1">
+                      <select class="form-control per-page-align">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select>
+                      <i class="fa fa-caret-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th width="35%">Email</th>
+                      <th width="35%">Name</th>
+                      <th width="25%">Last Login </th>
+                      <th width="15%">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>studetn01@mail.com</td>
+                      <td><img src="https://www.tutorialrepublic.com/examples/images/avatar/1.jpg" class="avatar" alt="Avatar"> Mark Hendry</td>
+                      <td>Fri Feb 2019- 09:53AM </td>
+                      <td><span class="active-label active-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <td>student02@yopmail.com</td>
+                      <td><img src="https://www.tutorialrepublic.com/examples/images/avatar/1.jpg" class="avatar" alt="Avatar"> Big Show</td>
+                      <td>Fri Feb 2019- 09:53AM </td>
+                      <td><span class="active-label active-warning">DeActive</span></td>
+                    </tr>
+                    <tr>
+                      <td>student02@yopmail.com</td>
+                       <td><img src="https://www.tutorialrepublic.com/examples/images/avatar/1.jpg" class="avatar" alt="Avatar"> Joncena</td>
+                      <td>Fri Feb 2019- 09:53AM </td>
+                      <td><span class="active-label active-success">Active</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="clearfix">
+                  <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                </div>
+              </div>
+            </div>
+            <div id="deactive" class="tab-pane fade">
+               <div class="table-wrapper">
+                <div class="table-title">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h2>User DeActive</h2>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="course_search_box">
+                        <input type="text" id="user_name_email" value="" class="form-control course_search_input" placeholder="Search with Email or Name ">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th width="30%">Email</th>
+                      <th width="30%">Name</th>
+                      <th width="25%">Last Active </th>
+                      <th width="15%">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>studetn01@mail.com</td>
+                      <td><img src="https://www.tutorialrepublic.com/examples/images/avatar/1.jpg" class="avatar" alt="Avatar"> Mark Hendry</td>
+                      <td>10GB</td>
+                      <td>1GB</td>
+                    </tr>
+                    <tr>
+                      <td>student02@yopmail.com</td>
+                      <td><img src="https://www.tutorialrepublic.com/examples/images/avatar/1.jpg" class="avatar" alt="Avatar"> Big Show</td>
+                      <td>10GB</td>
+                      <td>1GB</td>
+                    </tr>
+                    <tr>
+                      <td>student02@yopmail.com</td>
+                       <td><img src="https://www.tutorialrepublic.com/examples/images/avatar/1.jpg" class="avatar" alt="Avatar"> Joncena</td>
+                      <td>10GB</td>
+                      <td>1GB</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="clearfix">
+                  <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		  </div>
+  	</div>
+  </body>
+</html>
